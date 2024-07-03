@@ -1,0 +1,206 @@
+.swm-preferences-form input[type="text"],
+.swm-preferences-form select {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.swm-preferences-form label {
+    font-size: 18px;
+}
+.swm-preferences-form table.form-table input[type="text"] {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.swm-preferences-form select option {
+    white-space: nowrap;
+    padding: 8px;
+}
+
+.productos-mejor-valorados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.productos-mejor-valorados .producto {
+    width: 23%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .productos-mejor-valorados .producto {
+        width: 48%;
+    }
+}
+.productos-mejor-valorados .producto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.productos-mejor-valorados .producto h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.productos-mejor-valorados .producto p {
+    margin: 5px 0;
+}
+
+#chat-container {
+    z-index:100;
+    width: 300px;
+    height: 350px;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 95%;
+    max-height: 90%;    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /*oculto por defecto*/
+    font-size: 14px;
+    overflow: hidden;
+}
+#chat-header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.close-button {
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resize-buttons {
+    display: flex;
+    align-items: center;
+}
+.resize-button {
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatbot-title {
+    flex: 1;
+    margin: 0 15px; /* Margen opcional para separar el texto de los botones */
+}
+#chat-messages {
+    padding: 10px;
+    height: calc(100% - 120px); /* Altura ajustada para dejar espacio a la barra de entrada */
+    overflow-y: auto;
+}
+.user-message {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-align: right;
+}
+.bot-message {
+    background-color: #e1e1e1;
+    color: #000;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-align: left;
+}
+#input-container {
+    display: flex;
+    flex-direction: column; /* Cambiamos a dirección de columna para apilar elementos */
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.input-label {
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center; /* Alineamos verticalmente los elementos del input */
+}
+#user-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px; /* Espacio entre el input y el botón */
+}
+#send-button {
+    width: 60px;
+    padding: 5px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#send-button:hover {
+    background-color: #000000;
+}
+#chat-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
